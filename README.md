@@ -27,5 +27,14 @@ log_reg = sklearn.linear_model.LogisticRegression(solver = 'liblinear',random_st
 
 C means Inverse of regularization strength smaller values specify stronger regularization.
 
+``` Python
+log_reg.fit(X_train ,y_train)
+y_pred = log_reg.predict(X_test)
+```
+Fit data and predict data
+``` Python
+print('Accuracy: %.2f' % sklearn.metrics.accuracy_score(y_test, y_pred))
+```
+Check the accuracy
 ### How to use
 Just run it
